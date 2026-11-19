@@ -1,0 +1,25 @@
+[theme]
+base = "light"
+primaryColor = "#1F6FEB"
+backgroundColor = "#F4F7FB"
+secondaryBackgroundColor = "#FFFFFF"
+textColor = "#0B1F3A"
+
+[theme.sidebar]
+backgroundColor = "#0B1F3A"
+secondaryBackgroundColor = "#13305A"
+textColor = "#EAF1FB"
+
+[browser]
+gatherUsageStats = false
+
+[client]
+toolbarMode = "minimal"   # hides the irrelevant "Deploy" button
+
+[server]
+# headless skips Streamlit's first-run "enter your email" prompt; run_app.bat opens the browser itself.
+headless = true
+# Local prototype: listen on this machine only (Streamlit's default is all network interfaces).
+address = "localhost"
+# Batch uploads are limited to 10 MB (matches MAX_FILE_BYTES in Scripts/batch_predict.py).
+maxUploadSize = 10
